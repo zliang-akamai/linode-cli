@@ -66,34 +66,8 @@ else:
     bake_version(version)
 
 setup(
-    name="linode-cli",
     version=version,
-    description="CLI for the Linode API",
     long_description=long_description,
-    author="Linode",
-    author_email="developers@linode.com",
-    url="https://www.linode.com/docs/api/",
-    packages=[
-        "linodecli",
-        "linodecli.plugins",
-        "linodecli.configuration"
-    ],
-    license="BSD 3-Clause License",
-    install_requires=[
-        "terminaltables",
-        "requests",
-        "PyYAML",
-        "future; python_version <= '3.0.0'",
-    ],
-    extras_require={
-        ":python_version<'3.4'": ["enum34"],
-    },
-    entry_points={
-        "console_scripts": [
-            "linode-cli = linodecli:main",
-        ]
-    },
     data_files=get_baked_files(),
-    python_requires=">=3.6",
     include_package_data=True,
 )
