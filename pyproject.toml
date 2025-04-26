@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel", "packaging"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "linode-cli"
+name = "zliang-linode-cli-test-publishing"
 authors = [{ name = "Akamai Technologies Inc.", email = "developers@linode.com" }]
 description = "The official command-line interface for interacting with the Linode API."
 readme = "README.md"
